@@ -1,0 +1,33 @@
+/* styles/utils.module.css */
+
+/* Utility classes or shared styles */
+.bg-back {
+  background-color: #ffffff; /* Set your background color */
+}
+
+.text-primary {
+  color: #eeeeee; /* Set your primary color */
+}
+
+.btn {
+  background-color: #aaaaaa; /* Set your button color */
+  /* Add other button styles */
+}
+
+.bg-primary {
+  background-color: #eeeeee;
+}
+
+
+
+.text-color{
+  color: #D8D8D8;
+}
+
+.txt-color{
+  color: #000;
+}
+
+.box-color{
+  background-color: #D8D8D8;
+}
