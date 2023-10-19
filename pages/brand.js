@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '../pages/header';
 import useSWR from 'swr';
+import Loading from './Loading'; // Import the loading component
 
 const fetcher = async (url) => {
   const response = await fetch(url);
@@ -101,34 +102,36 @@ const BrandPage = () => {
         Select Camera Model
       </h1>
       {loading ? (
-        <div className="text-2xl mt-4">Loading...</div>
+        <Loading />
       ) : (
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6 p-4">
-{models.map((model) => (
-  <li key={model._id}>
-    <Link
-      href={`/mobilenumber?brand=${brand}&model=${model.model}&price=${model.price}`}
-    >
-      <div className="bg-white border border-gray-300 p-7 px-12  rounded-lg shadow-md transition-transform transform hover:-translate-y-2" style={{ width: '300px', height: '250px' }}>
-        <div className="flex items-center justify-center">
-          <Image
-            src={modelImage(model.model)} // Use the modelImage function
-            alt={model.model}
-            width={140}
-            height={90}
-          />
-        </div>
-        <p className="text-xl font-semibold text-center mt-4">{model.model}</p>
-      </div>
-    </Link>
-  </li>
-))}
-
+          {models.map((model) => (
+            <li key={model._id}>
+              <Link
+                href={`/mobilenumber?brand=${brand}&model=${model.model}&price=${model.price}`}
+              >
+                <div className="bg-white border border-gray-300 p-7 px-12  rounded-lg shadow-md transition-transform transform hover:-translate-y-2" style={{ width: '300px', height: '250px' }}>
+                  <div className="flex items-center justify-center">
+                    <Image
+                      src={modelImage(model.model)} // Use the modelImage function
+                      alt={model.model}
+                      width={140}
+                      height={90}
+                    />
+                  </div>
+                  <p className="text-xl font-semibold text-center mt-4">{model.model}</p>
+                </div>
+              </Link>
+            </li>
+          ))}
         </ul>
       )}
       <div className="mt-6 p-4 bg-white rounded text-center">
         <p className="text-gray-600 text-lg mt-1">
-          Didn't find your Model? Don't worry! Call us - <a href="tel:7022935544" className="text-black font-semibold">702-293-5544</a>
+          Didn't find your Model? Don't worry! Call us -{' '}
+          <a href="tel:7022935544" className="text-black font-semibold">
+            702-293-5544
+          </a>
         </p>
       </div>
     </div>
