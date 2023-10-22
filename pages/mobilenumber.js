@@ -100,8 +100,10 @@ const MobileNumber = () => {
     <Header />
     <div className="pt-0 mt-0 text-center bg-gray-200">
       <h2 className="bg-gray-300 p-5 font-bold font-bricolage-grotesque text-2xl text-black">
-        Please Enter Mobile Number to Continue!
-        <span style={{ marginLeft: '5px', display: 'inline-block' }}>➡</span>
+        Please Enter Mobile Number to Continue.
+    
+
+        
       </h2>
     </div>
     <div className="p-4 rounded-lg text-center bg-gray-200 mt-4 ">
