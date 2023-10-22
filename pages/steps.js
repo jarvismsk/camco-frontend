@@ -1,6 +1,42 @@
 import React from 'react';
 import { FaClipboardList, FaCalendarAlt, FaMoneyBill } from 'react-icons/fa';
 
+
+const Meta = () => {
+  return (
+    <>
+      <meta charSet="UTF-8" />
+      <meta
+        name="description"
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+      />
+      <meta
+        name="keywords"
+        content="sell camera online, sell my camera online, sell your camera online, sell Nikon camera, sell Canon camera, sell Sony camera, DSLR camera, camera lenses, sell used camera Bangalore, camera sale online, online camera selling, camera equipment sale"
+      />
+      <meta name="robots" content="index, follow" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:description"
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+      />
+   
+      <meta property="og:url" content="https://www.camco.org.in/" />
+
+      {/* Twitter */}
+      <meta name="twitter:card" />
+      <meta
+        name="twitter:description"
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+      />
+    
+      <meta name="twitter:url" content="https://www.camco.org.in/" />
+    </>
+  );
+};
+
 const Steps = () => {
   return (
     <div className="bg-gray-200 text-black p-4 mt-10 mx-3.5  md:p-8">

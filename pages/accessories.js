@@ -5,6 +5,41 @@ import Image from 'next/image';
 import Header from '../pages/header';
 import { FaCheck } from 'react-icons/fa';
 
+const Meta = () => {
+    return (
+      <>
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        />
+        <meta
+          name="keywords"
+          content="sell camera online, sell my camera online, sell your camera online, sell Nikon camera, sell Canon camera, sell Sony camera, DSLR camera, camera lenses, sell used camera Bangalore, camera sale online, online camera selling, camera equipment sale"
+        />
+        <meta name="robots" content="index, follow" />
+  
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        />
+     
+        <meta property="og:url" content="https://www.camco.org.in/" />
+  
+        {/* Twitter */}
+        <meta name="twitter:card" />
+        <meta
+          name="twitter:description"
+          content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        />
+      
+        <meta name="twitter:url" content="https://www.camco.org.in/" />
+      </>
+    );
+  };
+
 const AccessoriesPage = () => {
     const router = useRouter();
     const { brand, model, price, lenses, condition } = router.query;
@@ -37,7 +72,7 @@ const AccessoriesPage = () => {
     return (
         <div className="bg-gray-200 min-h-screen flex flex-col items-center justify-center">
             <Header />
-            <h1 className="text-4xl md:text-5xl pb-6 mb-4 mt-8 font-bold text-black text-center">
+            <h1 className="text-4xl md:text-5xl pb-6 mb-4 mt-0 font-bold text-black text-center">
                 Select the Accessories
             </h1>
             <ul className="w-full max-w-md space-y-4">

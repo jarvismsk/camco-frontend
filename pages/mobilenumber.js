@@ -12,6 +12,41 @@ const MobileNumber = () => {
   const [mobileNumber, setMobileNumber] = useState("");
   const [error, setError] = useState("");
 
+  const Meta = () => {
+    return (
+      <>
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        />
+        <meta
+          name="keywords"
+          content="sell camera online, sell my camera online, sell your camera online, sell Nikon camera, sell Canon camera, sell Sony camera, DSLR camera, camera lenses, sell used camera Bangalore, camera sale online, online camera selling, camera equipment sale"
+        />
+        <meta name="robots" content="index, follow" />
+  
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        />
+     
+        <meta property="og:url" content="https://www.camco.org.in/" />
+  
+        {/* Twitter */}
+        <meta name="twitter:card" />
+        <meta
+          name="twitter:description"
+          content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        />
+      
+        <meta name="twitter:url" content="https://www.camco.org.in/" />
+      </>
+    );
+  };
+
   const addMobileNumber = async (mobileNumber) => {
     const mobileData = {
       brand,
@@ -62,15 +97,30 @@ const MobileNumber = () => {
 
   return (
     <div className="bg-gray-200 min-h-screen flex flex-col items-center justify-center">
-      <Header />
-      <div className="p-4 mt-8 rounded-lg text-center bg-gray-200">
-        <h2 className="bg-gray-300 p-5 font-bold font-bricolage-grotesque text-2xl text-black">
-          Please Enter Mobile Number to Continue!
-        </h2>
-      </div>
-      <div className="p-4 rounded-lg text-center bg-gray-200">
-        <h2 className="font-bricolage-grotesque text-2xl text-black">Estimated Price - ₹ XX,XXX</h2>
-      </div>
+    <Header />
+    <div className="pt-0 mt-0 text-center bg-gray-200">
+      <h2 className="bg-gray-300 p-5 font-bold font-bricolage-grotesque text-2xl text-black">
+        Please Enter Mobile Number to Continue!
+        <span style={{ marginLeft: '5px', display: 'inline-block' }}>➡</span>
+      </h2>
+    </div>
+    <div className="p-4 rounded-lg text-center bg-gray-200 mt-4 ">
+      <h2
+        style={{
+          fontFamily: 'Arial, sans-serif',
+          fontSize: '24px',
+          fontWeight: 'bold',
+          color: '#333',
+          border: '2px solid black',
+          padding: '10px 20px',
+          borderRadius: '10px',
+          boxShadow: '3px 3px 5px rgba(0, 0, 0, 0.2)',
+          display: 'inline-block',
+        }}
+      >
+        Estimated Price: ₹XX,XXX
+      </h2>
+    </div>
 
       {loading ? (
         <Loading />

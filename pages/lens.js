@@ -5,6 +5,72 @@ import Image from 'next/image';
 import Header from '../pages/header';
 import Loading from './Loading'; // Import the Loading component
 
+const Meta = () => {
+  return (
+    <>
+      <meta charSet="UTF-8" />
+      <meta
+        name="description"
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+      />
+      <meta
+        name="keywords"
+        content="sell camera online, sell my camera online, sell your camera online, sell Nikon camera, sell Canon camera, sell Sony camera, DSLR camera, camera lenses, sell used camera Bangalore, camera sale online, online camera selling, camera equipment sale"
+      />
+      <meta name="robots" content="index, follow" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:description"
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+      />
+   
+      <meta property="og:url" content="https://www.camco.org.in/" />
+
+      {/* Twitter */}
+      <meta name="twitter:card" />
+      <meta
+        name="twitter:description"
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+      />
+    
+      <meta name="twitter:url" content="https://www.camco.org.in/" />
+    </>
+  );
+};
+
+const ScrollDownIndicator = () => {
+  const handleScrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <div
+      className="fixed bottom-10 right-10 flex items-center justify-center bg-black rounded-full p-3 cursor-pointer"
+      onClick={handleScrollDown}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6 text-white animate-bounce"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </div>
+  );
+};
+
 const LensPage = ({ lenses }) => {
   const router = useRouter();
   const { brand, model, price } = router.query;
@@ -97,8 +163,9 @@ const LensPage = ({ lenses }) => {
     return (
       <div className="bg-gray-200 min-h-screen flex flex-col items-center justify-center">
         <Header />
+        <ScrollDownIndicator />
   
-        <h1 className="text-4xl md:text-5xl  pb-3 mb-4 lg:text-6xl mt-8 font-bold text-black text-center">
+        <h1 className="text-4xl md:text-5xl  pb-3 mb-4 lg:text-6xl pt-24 mt-10 font-bold text-black text-center">
           Select the Camera Lens
         </h1>
         {loading ? (
