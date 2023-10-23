@@ -14,16 +14,7 @@ const MobileNumber = () => {
 
 
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '//in.fw-cdn.com/31476326/727722.js';
-    script.chat = true;
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+ 
 
 
   const Meta = () => {
@@ -168,4 +159,3 @@ const MobileNumber = () => {
 };
 
 export default MobileNumber;
-//Its gonna be wonderfull
