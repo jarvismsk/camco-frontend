@@ -42,7 +42,7 @@ const Header = () => {
             Camco
       
         </Link>
-        <p className="text-gray-600 text-lg">
+<p className="text-gray-600 text-lg">
           Call Now - <a href="tel:7022935544" className="text-black font-semibold hover:underline">+91 7022935544</a>
         </p>
       </div>
