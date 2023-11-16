@@ -90,14 +90,14 @@ const FinalPage = () => {
                 </p>
              
             </div>
-            <div className="mt-6 p-6 rounded bg-gray-200 mx-5 text-center">
-                <p className="text-lg text-gray-600">
-                    Not satisfied with the price? Don't worry! Call us -{' '}
-                    <a href="tel:7022935544" className="text-black font-semibold">
-                        702-293-5544
-                    </a>
-                </p>
-            </div>
+            <div className="m-4 mt-1 p-4 rounded bg-white text-center">
+          <p className="text-gray-600 text-lg mt-1">
+          Not Satisfied with the price? We'll make it right! Call us -{' '}
+            <a href="tel:7022935544" className="text-black font-semibold">
+              +91 70229 35544
+            </a>
+          </p>
+        </div>
         </div>
     );
 };

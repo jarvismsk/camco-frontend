@@ -214,7 +214,7 @@ const LensPage = ({ lenses }) => {
           <p className="text-gray-600 text-lg mt-1">
             Didn't find your Lens? Don't worry! Call us -{' '}
             <a href="tel:7022935544" className="text-black font-semibold">
-              702-293-5544
+            +91 70229 35544
             </a>
           </p>
         </div>
