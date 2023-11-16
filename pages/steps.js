@@ -12,7 +12,7 @@ const Meta = () => {
       />
       <meta
         name="keywords"
-        content="sell camera online, sell my camera online, sell your camera online, sell Nikon camera, sell Canon camera, sell Sony camera, DSLR camera, camera lenses, sell used camera Bangalore, camera sale online, online camera selling, camera equipment sale"
+        content="sell camera online, sell my camera online, sell your camera online, sell Nikon camera, sell Canon camera, sell Sony camera, DSLR camera, camera lenses, sell used camera Bangalore and all across India, camera sale online, online camera selling, camera equipment sale"
       />
       <meta name="robots" content="index, follow" />
 
@@ -20,7 +20,7 @@ const Meta = () => {
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore and all across India. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
       />
    
       <meta property="og:url" content="https://www.camco.org.in/" />
@@ -29,7 +29,7 @@ const Meta = () => {
       <meta name="twitter:card" />
       <meta
         name="twitter:description"
-        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore and all across India. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
       />
     
       <meta name="twitter:url" content="https://www.camco.org.in/" />
@@ -59,7 +59,7 @@ const Steps = () => {
               <FaCalendarAlt />
             </div>
             <h1 className="text-2xl font-bold mb-4">Schedule Pickup</h1>
-            <p className="text-lg mb-6">We will call you within the next 45 minutes to arrange the pickup. We operate only in Bangalore.</p>
+            <p className="text-lg mb-6">We will call you within the next 45 minutes to arrange the pickup. We operate across India.</p>
           </div>
         </div>
         <div className="text-center lg:text-left">

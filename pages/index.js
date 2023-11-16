@@ -10,7 +10,7 @@ const Meta = () => {
       <meta charSet="UTF-8" />
       <meta
         name="description"
-        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore and all across India. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
       />
       <meta
         name="keywords"
@@ -22,7 +22,7 @@ const Meta = () => {
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore and all across india. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
       />
    
       <meta property="og:url" content="https://www.camco.org.in/" />
@@ -31,7 +31,7 @@ const Meta = () => {
       <meta name="twitter:card" />
       <meta
         name="twitter:description"
-        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
+        content="Camco is your go-to place to sell Nikon, Canon, and Sony cameras online in Bangalore and all across India. Get instant cash for your used DSLR cameras and camera lenses. Explore our online camera sale for exciting offers and the best prices."
       />
     
       <meta name="twitter:url" content="https://www.camco.org.in/" />

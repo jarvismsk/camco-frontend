@@ -86,9 +86,9 @@ const FinalPage = () => {
             </div>
             <div className="bg-gray-200 mt-6 p-6 rounded mx-5 text-center">
                 <p className="text-lg text-gray-600 mb-4">
-                    NOTE: This is an estimated price and may vary upon physical inspection.
+                    NOTE - This is an estimated price and may vary upon physical inspection.
                 </p>
-                <p className="text-lg text-gray-600">LOCATION: We currently serve Bangalore, but we're expanding.</p>
+             
             </div>
             <div className="mt-6 p-6 rounded bg-gray-200 mx-5 text-center">
                 <p className="text-lg text-gray-600">
