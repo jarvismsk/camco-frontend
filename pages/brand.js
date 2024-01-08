@@ -53,7 +53,7 @@ const fetcher = async (url) => {
 const BrandPage = () => {
   const router = useRouter();
   const { brand } = router.query;
-  const { data: models, error } = useSWR(`https://camcoindia-550d153de949.herokuapp.com/${brand}camera`, fetcher);
+  const { data: models, error } = useSWR(`https://stark-meadow-99394-06b7b830b309.herokuapp.com/${brand}camera`, fetcher);
   const loading = !models && !error;
 
 
