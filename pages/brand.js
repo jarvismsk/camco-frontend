@@ -53,8 +53,9 @@ const fetcher = async (url) => {
 const BrandPage = () => {
   const router = useRouter();
   const { brand } = router.query;
-  const { data: models, error } = useSWR(`https://arcane-caverns-64937-622e2d9b7ed8.herokuapp.com/${brand}camera`, fetcher);
+  const { data: models, error } = useSWR(`https://camcoindia-550d153de949.herokuapp.com/${brand}camera`, fetcher);
   const loading = !models && !error;
+
 
   // Function to return the image path based on the camera model
   const modelImage = (model) => {
